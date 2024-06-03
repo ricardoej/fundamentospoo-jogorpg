@@ -77,3 +77,13 @@ Entender como a herança permite criar subclasses especializadas e compartilhar 
 1. Implemente todas as classes conforme descrito acima.
 2. Compile e execute a classe `Main` para testar o sistema.
 3. Verifique se os ataques e defesas dos personagens são executados corretamente de acordo com as regras específicas de cada tipo de personagem.
+
+## Novo Requisito: Adicionar Habilidades aos Personagens
+O jogo evoluiu, e agora cada personagem pode ter uma habilidade especial. As habilidades disponíveis são:
+
+- Curar a si mesmo: Permite ao personagem recuperar uma parte de seus pontos de vida.
+- Curar outro personagem: Permite ao personagem curar um aliado, restaurando uma parte dos pontos de vida dele.
+- Teletransporte: Permite ao personagem se mover instantaneamente para um local seguro.
+- Invisibilidade: Permite ao personagem ficar invisível por um período de tempo, evitando ataques.
+
+Cada personagem pode possuir apenas uma dessas habilidades. A escolha da habilidade deve ser feita no momento da criação do personagem ou durante o andamento do jogo.
