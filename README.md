@@ -4,22 +4,11 @@
 
 Neste exercício, você vai criar um sistema para gerenciar diferentes tipos de personagens em um jogo de RPG utilizando herança em Java. O objetivo é entender como a herança pode ser usada para criar uma hierarquia de classes e compartilhar atributos e métodos comuns, além de implementar funcionalidades específicas para cada tipo de personagem.
 
-Você vai implementar um sistema que gerencia diferentes tipos de personagens em um jogo de RPG. Haverá três classes: `Guerreiro`, `Mago` e `Arqueiro`. Cada tipo de personagem terá atributos e métodos específicos.
+Você vai implementar um sistema que gerencia diferentes tipos de personagens em um jogo de RPG. Haverá 5 classes: `Guerreiro`, `Bárbaro`, `Mago`, `Feiticeiro` e `Arqueiro`. Cada tipo de personagem terá atributos e métodos específicos.
 
 ## Classes a serem implementadas
 
-### Personagem
-- **Atributos:**
-  - `nome` (String)
-  - `nivel` (int)
-  - `pontosDeVida` (int)
-- **Métodos:**
-  - Construtor que inicializa `nome`, `nivel` e `pontosDeVida`
-  - Getters e setters para os atributos
-  - Método abstrato `atacar()`
-  - Método abstrato `defender()`
-
-### Guerreiro (subclasse de Personagem)
+### Guerreiro
 - **Atributos:**
 - - `nome` (String)
   - `nivel` (int)
@@ -29,9 +18,21 @@ Você vai implementar um sistema que gerencia diferentes tipos de personagens em
   - Construtor que inicializa `nome`, `nivel`, `pontosDeVida` e `forca`
   - Getters e setters para o atributo `forca`
   - Implementa o método `atacar()` para realizar um ataque físico (Ex.: "Boromir ataca com força 100")
-  - Implementa o método `defender()` para aumentar a defesa temporariamente (Ex.: "Boromir aumenta sua defesa temporariamente!")
+  - Implementa o método `defender()` para usar um escudo para defesa (Ex.: "Boromir usa o escudo para defesa!")
 
-### Mago (subclasse de Personagem)
+ ### Bárbaro
+- **Atributos:**
+- - `nome` (String)
+  - `nivel` (int)
+  - `pontosDeVida` (int)
+  - `forca` (int)
+- **Métodos:**
+  - Construtor que inicializa `nome`, `nivel`, `pontosDeVida` e `furia`
+  - Getters e setters para o atributo `furia`
+  - Implementa o método `atacar()` para realizar um ataque físico (Ex.: "Gorbag ataca com força 100")
+  - Implementa o método `defender()` para aumentar a defesa temporariamente (Ex.: "Gorbag aumenta sua defesa temporariamente!")
+
+### Mago
 - **Atributos:**
 - - `nome` (String)
   - `nivel` (int)
@@ -40,10 +41,22 @@ Você vai implementar um sistema que gerencia diferentes tipos de personagens em
 - **Métodos:**
   - Construtor que inicializa `nome`, `nivel`, `pontosDeVida` e `mana`
   - Getters e setters para o atributo `mana`
-  - Implementa o método `atacar()` para lançar um feitiço (Ex.: "Gandalf lança um feitiço com 25 de mana")
+  - Implementa o método `atacar()` para lançar um feitiço (Ex.: "Gandalf lança uma magia com 25 de mana")
   - Implementa o método `defender()` para criar uma barreira mágica (Ex.: "Gandalf cria uma barreira mágica!")
+ 
+### Feiticeiro
+- **Atributos:**
+- - `nome` (String)
+  - `nivel` (int)
+  - `pontosDeVida` (int)
+  - `mana` (int)
+- **Métodos:**
+  - Construtor que inicializa `nome`, `nivel`, `pontosDeVida` e `mana`
+  - Getters e setters para o atributo `mana`
+  - Implementa o método `atacar()` para lançar um feitiço (Ex.: "Angmar lança um feitiço com 25 de mana")
+  - Implementa o método `defender()` para criar uma barreira mágica (Ex.: "Angmar cria uma barreira mágica!")
 
-### Arqueiro (subclasse de Personagem)
+### Arqueiro
 - **Atributos:**
 - - `nome` (String)
   - `nivel` (int)
