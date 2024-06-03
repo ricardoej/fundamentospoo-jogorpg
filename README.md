@@ -25,7 +25,7 @@ Você vai implementar um sistema que gerencia diferentes tipos de personagens em
 - - `nome` (String)
   - `nivel` (int)
   - `pontosDeVida` (int)
-  - `forca` (int)
+  - `furia` (int)
 - **Métodos:**
   - Construtor que inicializa `nome`, `nivel`, `pontosDeVida` e `furia`
   - Getters e setters para o atributo `furia`
